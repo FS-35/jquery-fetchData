@@ -35,9 +35,14 @@ Search.click(function () {
             // let product = products.filter(product=>product.title.trim().replace(/\s/g, "").toLowerCase()===input.val().trim().replace(/\s/g, "").toLowerCase())
             // console.log(product)
             //     $.each(products,function(i,product){
-                console.log(index)
-                 console.log(products[index])
-                    $products.append('<li>name: '+products[index].title+', price: '+products[index].price+'</li>')
+                // console.log(L)
+                // //  console.log(products[index])
+                // console.log(L[0][0])
+                // console.log(L[1][0])
+                   $.each(L,function(index,value){
+                        console.log(value[0])
+                       $products.append('<li>name: '+value[0].title+', price: '+value[0].price+'$</li>')
+                   })
                 // })
             
 
